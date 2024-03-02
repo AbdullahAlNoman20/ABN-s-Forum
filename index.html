@@ -81,8 +81,8 @@
                     <h1 class="lg:text-7xl font-extrabold">Welcome to the <br><span class="text-blue-500">ABN's</span> Forum</h1>
                     <p class="my-3 lg:my-10 ">Share your favorite opinion and win and wp forum coffee mug!</p>
                     <label class="input flex items-center text-black pr-0">
-                        <input type="text" class="grow" placeholder="Search here" />
-                        <a class="btn bg-blue-600 text-white lg:font-extrabold ">Search</a>
+                        <input id="userInput" type="text" class="grow" placeholder="Search here" />
+                        <a onclick="handelSearch()" class="btn bg-blue-600 text-white lg:font-extrabold ">Search</a>
                     </label>
                 </div>
                 <!-- Banner Right -->
@@ -123,15 +123,15 @@
             <div class="flex lg:flex-row flex-col gap-7">
 
                  <!-- Discuss Section left -->
-                 <div class=" flex flex-col gap-5">
+                 <div id="infoContainer" class=" flex flex-col gap-5">
 
 
 
                     <!-- Discuss Card -->
-                    <div class="flex gap-5 bg-blue-100 p-5 rounded-2xl border-2 border-blue-400">
-                        <div class="relative"> 
+                    <!-- <div  class="flex gap-5 bg-blue-100 p-5 rounded-2xl border-2 border-blue-400 shadow-xl">
+                        <div class="flex"> 
                             <img class=" bg-white h-20 w-20 rounded-2xl" src="" alt="">
-                            <i class="absolute top-1 left-[70px] fa-solid fa-circle text-red-600"></i>
+                            <div class="badge badge-primary badge-xs bg-green-600 border-0"></div>
                         </div>
                         <div class="">
                             <p><span># Music</span> <span> Author : Awlad Hossain</span></p>
@@ -142,7 +142,7 @@
                                 <button><i class="fa-regular fa-envelope-open"></i></button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
 
 
@@ -181,8 +181,8 @@
 
 
 
-        <section class="px-5 lg:px-20 mt-20">
-            <div class="flex bg-black text-white p-7 lg:p-20 rounded-3xl items-center">
+        <section class="px-5 lg:px-20 mt-20 ">
+            <div class="flex bg-black text-white p-7 lg:p-20 rounded-3xl items-center shadow-xl">
                 <div class="">
                     <h1 class="text-3xl lg:text-7xl font-extrabold">Join Our Forum</h1>
                     <p class=" my-10">Share your favorite opinion and win and wp forum coffee mug! Yes, you can 
@@ -209,9 +209,10 @@
 
 
         <section class="px-5 lg:px-20 my-20">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div id="latestInfoContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-                <div class=" p-5 rounded-2xl border-2 border-blue-200">
+                <!-- Latest Card -->
+                <!-- <div class=" p-5 rounded-2xl border-2 border-blue-200 shadow-xl">
                     <img class="w-[340px] h-52 rounded-3xl" src="" alt="">
                     <p><i class="fa-regular fa-calendar my-8"></i> 29 January 2024</p>
                     <h3 class="font-bold">What will a mars habitat force that 
@@ -224,7 +225,7 @@
                             <h4>Cameron Williamson</h4>
                             <p>Unknown</p>
                 </div>
-                </div>
+                </div> -->
                 </div>
 
 
@@ -269,6 +270,8 @@
     
 
     <script src="js/utility.js"></script>
+    <script src="js/utility For Latest.js"></script>
+    <script src="js/search.js"></script>
 
 </body>
 </html>
