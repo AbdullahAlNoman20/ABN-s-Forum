@@ -1,0 +1,33 @@
+/* Add some basic styles for the button */
+.icon-button {
+    
+     color: rgb(0, 0, 0);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative; 
+  }
+
+  /* Add a style for the tooltip */
+  .icon-button:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; 
+  }
+
+  /* Show the tooltip on hover */
+  .icon-button:hover::before {
+    opacity: 1;
+  }
+
