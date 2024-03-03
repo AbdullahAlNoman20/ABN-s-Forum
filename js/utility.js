@@ -1,8 +1,8 @@
 // console.log("Connected")
 
 
-const loadInfo = async ()=>{
-    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
+const loadInfo = async (categoryName='')=>{
+    const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${categoryName}`);
     const data = await res.json();
     const discussInfo = data.posts;
     // console.log(discussInfo);
@@ -17,6 +17,11 @@ const displayDiscussInfo = discussInfo =>{
 
     // step one kothai bosabo seta select kora 
     const discussInfoContainer = document.getElementById('infoContainer');
+
+
+    // Search ar somoy 1 bar search korar por abr search korle ager data nai koira dibe
+    discussInfoContainer.textContent = '';
+
 
 
     discussInfo.forEach(info =>{
@@ -47,6 +52,9 @@ const displayDiscussInfo = discussInfo =>{
 
         discussInfoContainer.appendChild(discussInfoCard)
     })
+
+    // Hide Loading Spinner
+    toggleLoadingSpinner(false);
     
 }
 
