@@ -1,8 +1,4 @@
 
-
-
-
-
 const handelSearch = ()=>{
 
     // console.log("Connected");
@@ -29,4 +25,3 @@ const toggleLoadingSpinner = (isLoading)=>{
         loadingSpinner.classList.add('hidden');
     }
 }
-loadingSpinner

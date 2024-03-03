@@ -29,14 +29,14 @@ const displayLatestPost = latestInfo =>{
         // Step three set inner html
         latestInfoCard.innerHTML = `
         <img class="w-[340px] h-52 rounded-3xl" src="${post.cover_image}" alt="">
-                    <p><i class="fa-regular fa-calendar my-8"></i> ${post.author.posted_date}</p>
+                    <p><i class="fa-regular fa-calendar my-8"></i> ${(post.author.posted_date) || "No Publish Date"}</p>
                     <h3 class="font-bold">${post.title}</h3>
                     <p class="my-5">${post.description}</p>
                     <div class="flex items-center gap-5">
                         <img class="w-10 h-10 rounded-full " src="${post.profile_image}" alt="">
                         <div class="">
                             <h4>${post.author.name}</h4>
-                            <p>${post.author.designation}</p>
+                            <p>${(post.author.designation)|| "Unknown"}</p>
                 </div>
                 </div>
         `;
