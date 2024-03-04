@@ -37,7 +37,7 @@ const displayDiscussInfo = discussInfo =>{
 
         // Step two Div Create
         const discussInfoCard = document.createElement('div');
-        discussInfoCard.classList = ` flex gap-5 bg-blue-100 p-5 rounded-2xl border-2 border-blue-400 shadow-xl`;
+        discussInfoCard.classList = ` flex gap-5 bg-blue-50 p-5 rounded-2xl border-2 border-blue-200 shadow-xl`;
         
         // Step three set inner html
         discussInfoCard.innerHTML = `

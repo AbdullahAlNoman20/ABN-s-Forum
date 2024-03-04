@@ -2,6 +2,7 @@
 
 
 const readMark = document.getElementById('read-Mark');
+const clickNumber = document.getElementById('click-number');
 
 let count = 0;
 
@@ -20,13 +21,12 @@ const handelShowTitle = (name,view) =>{
     `;
     readMark.appendChild(readMarkInfo)
     
-
-
-
-
     console.log(count);
    count += 1;
    console.log(count);
+
+
+   clickNumber.innerHTML = `(${count})`
 
 }
 
