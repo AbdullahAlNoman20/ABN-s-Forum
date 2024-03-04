@@ -1,4 +1,6 @@
 
+
+
 const handelSearch = ()=>{
 
     // console.log("Connected");
@@ -10,9 +12,12 @@ const handelSearch = ()=>{
     const categoryName = searchField.value;
     // console.log(categoryName);
 
-    // then Call Load info
+    // then Call Load info after 2 second
+    setTimeout(function () {
     loadInfo(categoryName);
+    }, 2000);
 }
+
 
 // Handel Search Recap
 const toggleLoadingSpinner = (isLoading)=>{
@@ -25,3 +30,5 @@ const toggleLoadingSpinner = (isLoading)=>{
         loadingSpinner.classList.add('hidden');
     }
 }
+
+

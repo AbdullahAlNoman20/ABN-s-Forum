@@ -21,9 +21,9 @@ const handelShowTitle = (name,view) =>{
     `;
     readMark.appendChild(readMarkInfo)
     
-    console.log(count);
+    // console.log(count);
    count += 1;
-   console.log(count);
+//    console.log(count);
 
 
    clickNumber.innerHTML = `(${count})`

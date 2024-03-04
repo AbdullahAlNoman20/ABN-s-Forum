@@ -2,7 +2,14 @@
 
 
 const loadInfo = async (categoryName='')=>{
+
+
+   
+
     const res = await fetch(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${categoryName}`);
+    
+
+    
     const data = await res.json();
     const discussInfo = data.posts;
     // console.log(discussInfo);
@@ -10,6 +17,8 @@ const loadInfo = async (categoryName='')=>{
     // info gula Dekhanor Jonno display ke Call Korlam value dia
     displayDiscussInfo(discussInfo);
 }
+
+
 
 
 const displayDiscussInfo = discussInfo =>{
