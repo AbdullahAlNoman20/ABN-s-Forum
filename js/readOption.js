@@ -18,9 +18,16 @@ const handelShowTitle = (name,view) =>{
     <div class=" flex items-center "><i class="fa-regular fa-eye"></i><p> ${view}</p></div>
     
     `;
-    
     readMark.appendChild(readMarkInfo)
-   
+    
+
+
+
+
+    console.log(count);
+   count += 1;
+   console.log(count);
+
 }
 
 
